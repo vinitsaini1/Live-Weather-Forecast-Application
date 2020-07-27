@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  h2 {
+    padding-top: 2px;
+    padding-left: 30px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 40px;
+    color: #c23030;
+    text-align: center;
+  }
+
+  footer {
+
+    padding-bottom: 5px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 20px;
+    color: #c23030;
+    text-align: center;
+  }
+
+  body {
+    font-family: 'montserrat', sans-serif;
+    background-image: url('9.jpg');
+    background-size: cover;
+    background-position: top center;
+  }
+  
+  .app-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+  }
+  
+  header input {
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 18px 0px 18px 0px;
+    border-bottom: 3px solid #DF8E00;
+    border-top: 3px solid #DF8E00;
+    
+    color: #313131;
+    font-size: 18px;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+  }
+  
+  header input:focus {
+    background-color: rgba(196, 196, 196, 0.6);
+  }
+  
+  main {
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .location .city {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .location .date {
+    color: #FFF;
+    font-size: 16px;
+  }
+  
+  .current .temp {
+    color: #FFF;
+    font-size: 100px;
+    font-weight: 700;
+    margin: 30px 0px;
+    text-shadow: 2px 10px rgba(0, 0, 0, 0.6);
+  }
+  
+  .current .temp span {
+    font-weight: 300;
+  }
+  
+  .current .weather {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 15px;
+    text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+  }
+  .current .humids {
+    color: #FFF;
+    font-size:24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+  }
+  .current .visible-s {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+  }
+
+  .autocomplete.dropdown {
+    background-color: #F8F8F8;
+    position: absolute;
+    box-shadow: 0 1px 3px 0px;
+    border-radius: 3px;
+    border: 1px solid #FAFAFA;
+    z-index: 100;
+    max-height: 250px;
+    overflow-y: auto;
+  }
+  
+  .autocomplete.dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .autocomplete.dropdown ul li {
+    padding: 4px 12px;
+  }
+  
+  .autocomplete.dropdown ul li:focus,
+  .autocomplete.dropdown ul li:hover {
+    background-color: #F0F0F0;
+    cursor: pointer;
+  }

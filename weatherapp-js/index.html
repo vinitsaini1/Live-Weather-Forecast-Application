@@ -1,0 +1,52 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather app-vinit</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="data/autocomplete.css" />
+  <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.0.min.js"></script>
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.9.2/jquery-ui.min.js"></script>
+    <link rel="Stylesheet" type="text/css" href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.9.2/themes/blitzer/jquery-ui.css" />
+</head>
+
+
+<body>
+  <div class="app-wrap">
+        <h2>Weather Forecast</h2>
+    <header>
+      <input type="text" id="search" class="search-box autocomplete" placeholder="City / Country" />
+    
+    </header>
+    <main>
+      <section class="location">
+        <div class="city">India, IN</div>
+        <div class="date">Sunday 26 July 2020</div>
+      </section>
+      <div class="current">
+        <div class="temp">27<span>°c</span></div>
+        <div class="weather">Sunny</div>
+        <div class="humids">84 % --Humidity</div>
+        <div class="visible-s">2500 m --Visiblity</div>
+      </div>
+    </main>
+    <footer>&copy; Copyright 2020 - Vinit Saini</footer>
+  </div>
+  
+  <script src="main.js"></script>
+  <script src="autocomplete_script.js"></script>
+
+  <!-- <script>
+    var element = document.getElementById('search');
+var autoComplete = new AutoComplete(element);
+
+element.onkeyup = function () {
+    autoComplete.getSuggestionList();
+}
+  </script> -->
+  
+</body>
+</html>
